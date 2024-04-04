@@ -106,6 +106,7 @@ services:
     environment:
       CONTROL_CENTER_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
       CONTROL_CENTER_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
       KSQL_URL: "http://ksqldb-server:8088"
       CONTROL_CENTER_REPLICATION_FACTOR: 1
 

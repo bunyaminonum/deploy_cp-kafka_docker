@@ -170,3 +170,28 @@ services:
         KAFKA_REST_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
         KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
         KAFKA_REST_SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+
+  grafana:
+    image: grafana/grafana:latest
+    depends_on:
+      - prometheus
+      - broker1
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - 3000:3000
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
+      

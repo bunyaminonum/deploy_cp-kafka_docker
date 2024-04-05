@@ -1,13 +1,22 @@
 global:
-  scrape_interval: 15s
-  evaluation_interval: 15s
+  scrape_interval: 15s 
+  evaluation_interval: 15s 
 
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: 'kafka-brokers'
+  - job_name: 'kafka-broker1'
     static_configs:
-      - targets: ['broker1:7071', 'broker2:7072', 'broker3:7073']
+      - targets: ['broker1:7071']
+
+  - job_name: 'kafka-broker2'
+    static_configs:
+      - targets: ['broker2:7072']
+
+  - job_name: 'kafka-broker3' 
+    static_configs:
+      - targets: ['broker3:7073']
+
 

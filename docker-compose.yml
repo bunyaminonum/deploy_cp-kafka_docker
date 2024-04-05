@@ -60,7 +60,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_JMX_PORT: 9103
       KAFKA_JMX_HOSTNAME: 
-      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.3.jar=7073:/opt/kafka_broke3.yml"
+      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.3.jar=7073:/opt/kafka_broker3.yml"
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.3.jar:/opt/jmx_prometheus_javaagent-0.15.3.jar
       - /opt/kafka_broker3.yml:/opt/kafka_broker3.yml

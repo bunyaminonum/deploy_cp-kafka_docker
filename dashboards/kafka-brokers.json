@@ -27,7 +27,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -40,7 +40,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of active controllers in the cluster.",
           "fieldConfig": {
@@ -129,7 +129,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of Brokers Online",
           "fieldConfig": {
@@ -221,7 +221,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Unclean leader election rate",
           "fieldConfig": {
@@ -306,7 +306,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -391,7 +391,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -507,7 +507,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of partitions that dont have an active leader and are hence not writable or readable.",
           "fieldConfig": {
@@ -591,7 +591,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of under-replicated partitions (| ISR | < | all replicas |).",
           "fieldConfig": {
@@ -678,7 +678,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of partitions under min insync replicas.",
           "fieldConfig": {
@@ -763,7 +763,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Partitions that are online",
           "fieldConfig": {
@@ -853,7 +853,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -865,7 +865,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -879,7 +879,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -890,7 +890,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "fieldConfig": {
         "defaults": {
@@ -1006,7 +1006,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "fieldConfig": {
         "defaults": {
@@ -1121,7 +1121,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "fieldConfig": {
         "defaults": {
@@ -1237,7 +1237,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -1250,7 +1250,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1350,7 +1350,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1451,7 +1451,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1551,7 +1551,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1652,7 +1652,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1753,7 +1753,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -1855,7 +1855,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -1867,7 +1867,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -1880,7 +1880,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Offline partitions over time",
           "fieldConfig": {
@@ -1963,7 +1963,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_replicamanager_partitioncount{job=~\"$broker_id\"})",
@@ -1979,7 +1979,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Offline partitions over time",
           "fieldConfig": {
@@ -2062,7 +2062,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_controller_kafkacontroller_offlinepartitionscount{job=~\"$broker_id\"})",
@@ -2078,7 +2078,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Under replicated partitions over time",
           "fieldConfig": {
@@ -2161,7 +2161,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_cluster_partition_underreplicated{job=~\"$broker_id\"})",
@@ -2177,7 +2177,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Under min in sync replicas partitions over time",
           "fieldConfig": {
@@ -2260,7 +2260,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_cluster_partition_underminisr{job=~\"$broker_id\"})",
@@ -2278,7 +2278,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -2290,7 +2290,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -2303,7 +2303,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Average fraction of time the network processor threads are idle. Values are between 0 (all resources are used) and 100 (all resources are available)\n",
           "fieldConfig": {
@@ -2386,7 +2386,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_socketserver_networkprocessoravgidlepercent{job=~\"$broker_id\"}",
@@ -2401,7 +2401,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Average fraction of time the request handler threads are idle. Values are between 0 (all resources are used) and 100 (all resources are available).\n",
           "fieldConfig": {
@@ -2484,7 +2484,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_server_kafkarequesthandlerpool_requesthandleravgidlepercent_total{job=~\"$broker_id\"}",
@@ -2499,7 +2499,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -2581,7 +2581,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestchannel_requestqueuesize{job=~\"$broker_id\"}",
@@ -2597,7 +2597,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -2679,7 +2679,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestchannel_responsequeuesize{job=~\"$broker_id\"}",
@@ -2697,7 +2697,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -2709,7 +2709,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -2722,7 +2722,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Latency in millseconds for ZooKeeper requests from broker.\n",
           "fieldConfig": {
@@ -2805,7 +2805,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_server_zookeeperclientmetrics_zookeeperrequestlatencyms{job=~\"$broker_id\"}",
@@ -2821,7 +2821,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -2904,7 +2904,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "rate(kafka_server_sessionexpirelistener_zookeepersyncconnectspersec{job=~\"$broker_id\"}[5m])",
@@ -2921,7 +2921,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -3004,7 +3004,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "rate(kafka_server_sessionexpirelistener_zookeeperexpirespersec{job=~\"$broker_id\"}[5m])",
@@ -3021,7 +3021,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -3104,7 +3104,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "rate(kafka_server_sessionexpirelistener_zookeeperdisconnectspersec{job=~\"$broker_id\"}[5m])",
@@ -3121,7 +3121,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -3204,7 +3204,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "rate(kafka_server_sessionexpirelistener_zookeeperauthfailurespersec{job=~\"$broker_id\"}[5m])",
@@ -3223,7 +3223,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -3235,7 +3235,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -3248,7 +3248,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": ": The number of in-sync replicas (ISRs) for a particular partition should remain fairly static, the only exceptions are when you are expanding your broker cluster or removing partitions. In order to maintain high availability, a healthy Kafka cluster requires a minimum number of ISRs for failover. A replica could be removed from the ISR pool for a couple of reasons: it is too far behind the leaders offset (user-configurable by setting the replica.lag.max.messages configuration parameter), or it has not contacted the leader for some time (configurable with the replica.socket.timeout.ms parameter). No matter the reason, an increase in IsrShrinksPerSec without a corresponding increase in IsrExpandsPerSec shortly thereafter is cause for concern and requires user intervention.The Kafka documentation provides a wealth of information on the user-configurable parameters for brokers.",
           "fieldConfig": {
@@ -3331,7 +3331,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_server_replicamanager_isrshrinkspersec{job=~\"$broker_id\"}",
@@ -3346,7 +3346,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": ": The number of in-sync replicas (ISRs) for a particular partition should remain fairly static, the only exceptions are when you are expanding your broker cluster or removing partitions. In order to maintain high availability, a healthy Kafka cluster requires a minimum number of ISRs for failover. A replica could be removed from the ISR pool for a couple of reasons: it is too far behind the leaders offset (user-configurable by setting the replica.lag.max.messages configuration parameter), or it has not contacted the leader for some time (configurable with the replica.socket.timeout.ms parameter). No matter the reason, an increase in IsrShrinksPerSec without a corresponding increase in IsrExpandsPerSec shortly thereafter is cause for concern and requires user intervention.The Kafka documentation provides a wealth of information on the user-configurable parameters for brokers.",
           "fieldConfig": {
@@ -3429,7 +3429,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_server_replicamanager_isrexpandspersec{job=~\"$broker_id\"}",
@@ -3447,7 +3447,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -3459,7 +3459,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -3472,7 +3472,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -3554,7 +3554,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_log_log_size{job=~\"$broker_id\"}) by (topic)",
@@ -3570,7 +3570,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -3652,7 +3652,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_log_log_size{job=~\"$broker_id\"}) by (instance)",
@@ -3670,7 +3670,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -3682,7 +3682,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -3695,7 +3695,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough IO threads or the CPU is a bottleneck, or the request queue isnt large enough. The request queue size should match the number of connections.",
           "fieldConfig": {
@@ -3778,7 +3778,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_requestqueuetimems{job=~\"$broker_id\", request=\"Produce\"}",
@@ -3794,7 +3794,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "In most cases, a high value can imply slow local storage or the storage is a bottleneck. One should also investigate LogFlushRateAndTimeMs to know how long page flushes are taking, which will also indicate a slow disk. In the case of FetchFollower requests, time spent in LocalTimeMs can be the result of a ZooKeeper write to change the ISR.",
           "fieldConfig": {
@@ -3877,7 +3877,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_localtimems{job=~\"$broker_id\",request=\"Produce\"}",
@@ -3897,7 +3897,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply a slow network connection. For fetch request, if the remote time is high, it could be that there is not enough data to give in a fetch response. This can happen when the consumer or replica is caught up and there is no new incoming data. If this is the case, remote time will be close to the max wait time, which is normal. Max wait time is configured via replica.fetch.wait.max.ms and fetch.max.wait.ms.\n",
           "fieldConfig": {
@@ -3944,7 +3944,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_remotetimems{job=~\"$broker_id\",request=\"Produce\"}",
@@ -3987,7 +3987,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough network threads or the network cant dequeue responses quickly enough, causing back pressure in the response queue.\n",
           "fieldConfig": {
@@ -4070,7 +4070,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsequeuetimems{job=~\"$broker_id\",request=\"Produce\"}",
@@ -4086,7 +4086,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply the zero-copy from disk to the network is slow, or the network is the bottleneck because the network cant dequeue responses of the TCP socket as quickly as theyre being created. If the network buffer gets full, Kafka will block.\n",
           "fieldConfig": {
@@ -4169,7 +4169,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsesendtimems{job=~\"$broker_id\",request=\"Produce\"}",
@@ -4187,7 +4187,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -4199,7 +4199,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -4212,7 +4212,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough IO threads or the CPU is a bottleneck, or the request queue isnt large enough. The request queue size should match the number of connections.",
           "fieldConfig": {
@@ -4295,7 +4295,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_requestqueuetimems{job=~\"$broker_id\",request=\"Fetch\"}",
@@ -4311,7 +4311,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "In most cases, a high value can imply slow local storage or the storage is a bottleneck. One should also investigate LogFlushRateAndTimeMs to know how long page flushes are taking, which will also indicate a slow disk. In the case of FetchFollower requests, time spent in LocalTimeMs can be the result of a ZooKeeper write to change the ISR.",
           "fieldConfig": {
@@ -4394,7 +4394,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_localtimems{job=~\"$broker_id\",request=\"Fetch\"}",
@@ -4410,7 +4410,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply a slow network connection. For fetch request, if the remote time is high, it could be that there is not enough data to give in a fetch response. This can happen when the consumer or replica is caught up and there is no new incoming data. If this is the case, remote time will be close to the max wait time, which is normal. Max wait time is configured via replica.fetch.wait.max.ms and fetch.max.wait.ms.\n",
           "fieldConfig": {
@@ -4493,7 +4493,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_remotetimems{job=~\"$broker_id\",request=\"Fetch\"}",
@@ -4509,7 +4509,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough network threads or the network cant dequeue responses quickly enough, causing back pressure in the response queue.\n",
           "fieldConfig": {
@@ -4592,7 +4592,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsequeuetimems{job=~\"$broker_id\",request=\"Fetch\"}",
@@ -4608,7 +4608,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply the zero-copy from disk to the network is slow, or the network is the bottleneck because the network cant dequeue responses of the TCP socket as quickly as theyre being created. If the network buffer gets full, Kafka will block.\n",
           "fieldConfig": {
@@ -4691,7 +4691,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsesendtimems{job=~\"$broker_id\",request=\"Fetch\"}",
@@ -4709,7 +4709,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -4721,7 +4721,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -4734,7 +4734,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough IO threads or the CPU is a bottleneck, or the request queue isnt large enough. The request queue size should match the number of connections.",
           "fieldConfig": {
@@ -4817,7 +4817,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_requestqueuetimems{job=~\"$broker_id\",request=\"FetchFollower\"}",
@@ -4833,7 +4833,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "In most cases, a high value can imply slow local storage or the storage is a bottleneck. One should also investigate LogFlushRateAndTimeMs to know how long page flushes are taking, which will also indicate a slow disk. In the case of FetchFollower requests, time spent in LocalTimeMs can be the result of a ZooKeeper write to change the ISR.",
           "fieldConfig": {
@@ -4916,7 +4916,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_localtimems{job=~\"$broker_id\",request=\"FetchFollower\"}",
@@ -4936,7 +4936,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply a slow network connection. For fetch request, if the remote time is high, it could be that there is not enough data to give in a fetch response. This can happen when the consumer or replica is caught up and there is no new incoming data. If this is the case, remote time will be close to the max wait time, which is normal. Max wait time is configured via replica.fetch.wait.max.ms and fetch.max.wait.ms.\n",
           "fieldConfig": {
@@ -4983,7 +4983,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_remotetimems{job=~\"$broker_id\",request=\"FetchFollower\"}",
@@ -5026,7 +5026,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply there aren't enough network threads or the network cant dequeue responses quickly enough, causing back pressure in the response queue.\n",
           "fieldConfig": {
@@ -5109,7 +5109,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsequeuetimems{job=~\"$broker_id\",request=\"FetchFollower\"}",
@@ -5125,7 +5125,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "A high value can imply the zero-copy from disk to the network is slow, or the network is the bottleneck because the network cant dequeue responses of the TCP socket as quickly as theyre being created. If the network buffer gets full, Kafka will block.\n",
           "fieldConfig": {
@@ -5208,7 +5208,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_requestmetrics_responsesendtimems{job=~\"$broker_id\",request=\"FetchFollower\"}",
@@ -5226,7 +5226,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -5238,7 +5238,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -5251,7 +5251,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of consumer groups per group coordinator",
           "fieldConfig": {
@@ -5334,7 +5334,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_coordinator_group_groupmetadatamanager_numgroups{job=~\"$broker_id\"}",
@@ -5350,7 +5350,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of consumer group per state",
           "fieldConfig": {
@@ -5433,7 +5433,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_coordinator_group_groupmetadatamanager_numgroupsstable{job=~\"$broker_id\"})",
@@ -5445,7 +5445,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_coordinator_group_groupmetadatamanager_numgroupspreparingrebalance{job=~\"$broker_id\"})",
@@ -5457,7 +5457,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_coordinator_group_groupmetadatamanager_numgroupsdead{job=~\"$broker_id\"})",
@@ -5469,7 +5469,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_coordinator_group_groupmetadatamanager_numgroupscompletingrebalance{job=~\"$broker_id\"})",
@@ -5481,7 +5481,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_coordinator_group_groupmetadatamanager_numgroupsempty{job=~\"$broker_id\"})",
@@ -5499,7 +5499,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -5511,7 +5511,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -5524,7 +5524,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -5606,7 +5606,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_count{job=~\"$broker_id\"}) by (listener)",
@@ -5622,7 +5622,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -5704,7 +5704,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_count{job=~\"$broker_id\"}) by (instance)",
@@ -5720,7 +5720,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -5802,7 +5802,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_creation_rate{job=~\"$broker_id\"}) by (listener)",
@@ -5818,7 +5818,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -5900,7 +5900,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_creation_rate{job=~\"$broker_id\"}) by (instance)",
@@ -5916,7 +5916,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -5998,7 +5998,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_close_rate{job=~\"$broker_id\"}) by (listener)",
@@ -6014,7 +6014,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -6096,7 +6096,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connection_close_rate{job=~\"$broker_id\"}) by (instance)",
@@ -6112,7 +6112,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Tracks the amount of time Acceptor is blocked from accepting connections. See KIP-402 for more details.",
           "fieldConfig": {
@@ -6194,7 +6194,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "kafka_network_acceptor_acceptorblockedpercent{job=~\"$broker_id\"}",
@@ -6210,7 +6210,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "fieldConfig": {
             "defaults": {
@@ -6291,7 +6291,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connections{job=~\"$broker_id\"}) by (client_software_name, client_software_version)",
@@ -6309,7 +6309,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -6321,7 +6321,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -6334,7 +6334,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Total request rate.",
           "fieldConfig": {
@@ -6397,7 +6397,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_network_requestmetrics_requestspersec{job=~\"$broker_id\"}[5m]))",
@@ -6413,7 +6413,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Produce request rate.",
           "fieldConfig": {
@@ -6476,7 +6476,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_network_requestmetrics_requestspersec{job=~\"$broker_id\",request=\"Produce\"}[5m]))",
@@ -6492,7 +6492,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Fetch request rate.",
           "fieldConfig": {
@@ -6555,7 +6555,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_network_requestmetrics_requestspersec{job=~\"$broker_id\",request=\"FetchConsumer\"}[5m]))",
@@ -6571,7 +6571,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Offset Commit request rate.",
           "fieldConfig": {
@@ -6634,7 +6634,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_network_requestmetrics_requestspersec{job=~\"$broker_id\",request=\"OffsetCommit\"}[5m]))",
@@ -6650,7 +6650,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Metadata request rate.",
           "fieldConfig": {
@@ -6713,7 +6713,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_network_requestmetrics_requestspersec{job=~\"$broker_id\",request=\"Metadata\"}[5m]))",
@@ -6729,7 +6729,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -6812,7 +6812,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_server_brokertopicmetrics_totalproducerequestspersec{job=~\"$broker_id\"}[5m])) by (topic)",
@@ -6828,7 +6828,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "",
           "fieldConfig": {
@@ -6911,7 +6911,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_server_brokertopicmetrics_totalfetchrequestspersec{job=~\"$broker_id\"}[5m])) by (topic)",
@@ -6929,7 +6929,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }
@@ -6941,7 +6941,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "ddhsokg5i9ssgd"
+        "uid": "fdhtklxz15ddse"
       },
       "gridPos": {
         "h": 1,
@@ -6954,7 +6954,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "The number of messages produced converted to match the log.message.format.version.",
           "fieldConfig": {
@@ -7037,7 +7037,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(rate(kafka_server_brokertopicmetrics_producemessageconversionspersec{job=~\"$broker_id\"}[5m]))",
@@ -7054,7 +7054,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "The number of messages consumed converted at consumer to match the log.message.format.version.",
           "fieldConfig": {
@@ -7153,7 +7153,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "description": "Number of connection per client version",
           "fieldConfig": {
@@ -7211,7 +7211,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "ddhsokg5i9ssgd"
+                "uid": "fdhtklxz15ddse"
               },
               "editorMode": "code",
               "expr": "sum(kafka_server_socketservermetrics_connections{job=~\"$broker_id\"}) by (client_software_name, client_software_version) ",
@@ -7229,7 +7229,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddhsokg5i9ssgd"
+            "uid": "fdhtklxz15ddse"
           },
           "refId": "A"
         }

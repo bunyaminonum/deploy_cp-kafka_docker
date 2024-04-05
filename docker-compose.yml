@@ -24,8 +24,8 @@ services:
       KAFKA_JMX_HOSTNAME: 130.61.208.192
       KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.1.jar=7071:/opt/kafka_broker1.yml"
     volumes:
-      - /opt/jmx_prometheus_javaagent-0.15.0.jar:/opt/jmx_prometheus_javaagent-0.15.0.jar
-      - /opt/kafka_broker.yml:/opt/kafka_broker.yml
+      - /opt/jmx_prometheus_javaagent-0.15.1.jar:/opt/jmx_prometheus_javaagent-0.15.1.jar
+      - /opt/kafka_broker1.yml:/opt/kafka_broker1.yml
 
   broker2:
     image: confluentinc/cp-kafka:7.4.3
@@ -43,8 +43,8 @@ services:
       KAFKA_JMX_HOSTNAME: 130.61.208.192
       KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.2.jar=7072:/opt/kafka_broker2.yml"
     volumes:
-      - /opt/jmx_prometheus_javaagent-0.15.0.jar:/opt/jmx_prometheus_javaagent-0.15.0.jar
-      - /opt/kafka_broker.yml:/opt/kafka_broker.yml
+      - /opt/jmx_prometheus_javaagent-0.15.2.jar:/opt/jmx_prometheus_javaagent-0.15.2.jar
+      - /opt/kafka_broker2.yml:/opt/kafka_broker2.yml
 
   broker3:
     image: confluentinc/cp-kafka:7.4.3
@@ -62,8 +62,8 @@ services:
       KAFKA_JMX_HOSTNAME: 
       KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.3.jar=7073:/opt/kafka_broke3.yml"
     volumes:
-      - /opt/jmx_prometheus_javaagent-0.15.0.jar:/opt/jmx_prometheus_javaagent-0.15.0.jar
-      - /opt/kafka_broker.yml:/opt/kafka_broker.yml
+      - /opt/jmx_prometheus_javaagent-0.15.3.jar:/opt/jmx_prometheus_javaagent-0.15.3.jar
+      - /opt/kafka_broker3.yml:/opt/kafka_broker3.yml
   schema-registry:
     image: confluentinc/cp-schema-registry:7.4.3
     depends_on:

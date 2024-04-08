@@ -36,3 +36,8 @@ volumes:
 
   prometheus_data:
   grafana_data:
+
+secrets:
+
+  kafka_jaas:
+    file: ./kafka_server_jaas.conf

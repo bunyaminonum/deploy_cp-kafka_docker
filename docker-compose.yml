@@ -24,4 +24,4 @@ services:
       KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.0.jar=7071:/opt/kafka_broker.yml"
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.0.jar:/opt/jmx_prometheus_javaagent-0.15.0.jar
-      - ./kafka_broker.yml:/opt/kafka_broker.yml
+      - /opt/kafka_broker.yml:/opt/kafka_broker.yml

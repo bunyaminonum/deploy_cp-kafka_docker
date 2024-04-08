@@ -1,199 +1,38 @@
-
 version: '3'
 
 services:
+
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.3
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
-  broker1:
+  broker:
     image: confluentinc/cp-kafka:7.4.3
     depends_on:
       - zookeeper
     ports:
       - 9092:9092
+      - 9093:9093  # SASL_PLAINTEXT port
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://130.61.208.192:9092
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://130.61.208.192:9092,SASL_PLAINTEXT://130.61.208.192:9093
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,SASL_PLAINTEXT://0.0.0.0:9093
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_JMX_PORT: 9101
-      KAFKA_JMX_HOSTNAME: jmx_broker1
-      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.1.jar=7071:/opt/kafka_broker1.yml"
+      KAFKA_JMX_HOSTNAME: jmx_broker
+      KAFKA_OPTS: "-Djava.security.auth.login.config=/etc/kafka/kafka_server_jaas.conf -javaagent:/opt/jmx_prometheus_javaagent-0.15.1.jar=7071:/opt/kafka_broker.yml"
+      KAFKA_SASL_ENABLED_MECHANISMS: PLAIN
+      KAFKA_SASL_MECHANISM_INTER_BROKER_PROTOCOL: PLAIN
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,SASL_PLAINTEXT:SASL_PLAINTEXT
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.1.jar:/opt/jmx_prometheus_javaagent-0.15.1.jar
-      - /opt/kafka_broker1.yml:/opt/kafka_broker1.yml
-
-  broker2:
-    image: confluentinc/cp-kafka:7.4.3
-    depends_on:
-      - zookeeper
-    ports:
-      - 9093:9093
-    environment:
-      KAFKA_BROKER_ID: 2
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://130.61.208.192:9093
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9093
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_JMX_PORT: 9102
-      KAFKA_JMX_HOSTNAME: jmx_broker2
-      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.2.jar=7072:/opt/kafka_broker2.yml"
-    volumes:
-      - /opt/jmx_prometheus_javaagent-0.15.2.jar:/opt/jmx_prometheus_javaagent-0.15.2.jar
-      - /opt/kafka_broker2.yml:/opt/kafka_broker2.yml
-
-  broker3:
-    image: confluentinc/cp-kafka:7.4.3
-    depends_on:
-      - zookeeper
-    ports:
-      - 9094:9094
-    environment:
-      KAFKA_BROKER_ID: 3
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://130.61.208.192:9094
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9094
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_JMX_PORT: 9103
-      KAFKA_JMX_HOSTNAME: jmx_broker3
-      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.3.jar=7073:/opt/kafka_broker3.yml"
-    volumes:
-      - /opt/jmx_prometheus_javaagent-0.15.3.jar:/opt/jmx_prometheus_javaagent-0.15.3.jar
-      - /opt/kafka_broker3.yml:/opt/kafka_broker3.yml
-
-  schema-registry:
-    image: confluentinc/cp-schema-registry:7.4.3
-    depends_on:
-      - broker1
-      - broker2
-      - broker3
-    ports:
-      - 8081:8081
-    environment:
-      SCHEMA_REGISTRY_HOST_NAME: schema-registry
-      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
-
-  ksqldb-server:
-    image: confluentinc/cp-ksqldb-server:7.4.3
-    hostname: ksqldb-server
-    container_name: ksqldb-server
-    depends_on:
-      - broker1
-      - broker2
-      - broker3
-    ports:
-      - "8088:8088"
-    environment:
-      KSQL_CONFIG_DIR: "/etc/ksql"
-      KSQL_BOOTSTRAP_SERVERS: "broker1:9092,broker2:9093,broker3:9094"
-      KSQL_HOST_NAME: ksqldb-server
-      KSQL_LISTENERS: "http://0.0.0.0:8088"
-      KSQL_CACHE_MAX_BYTES_BUFFERING: 0
-      KSQL_KSQL_SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
-      KSQL_KSQL_CONNECT_URL: "http://connect:8083"
-      KSQL_KSQL_LOGGING_PROCESSING_TOPIC_REPLICATION_FACTOR: 1
-      KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: 'true'
-      KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: 'true'
-
-
-  ksqldb-cli:
-    image: confluentinc/cp-ksqldb-cli:7.4.3
-    container_name: ksqldb-cli
-    depends_on:
-      - broker1
-      - broker2
-      - broker3
-      - connect
-      - ksqldb-server
-    entrypoint: /bin/sh
-    tty: true
-
-
-  control-center:
-    image: confluentinc/cp-enterprise-control-center:7.4.3
-    depends_on:
-      - broker1
-      - broker2
-      - broker3
-    ports:
-      - 9021:9021
-    environment:
-      CONTROL_CENTER_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
-      CONTROL_CENTER_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-      SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
-      KSQL_URL: "http://ksqldb-server:8088"
-      CONTROL_CENTER_REPLICATION_FACTOR: 1
-
-  connect:
-    image: confluentinc/cp-kafka-connect:7.4.3
-    ports:
-      - 8083:8083
-    environment:
-      CONNECT_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
-      CONNECT_REST_PORT: 8083
-      CONNECT_GROUP_ID: compose-connect-group
-      CONNECT_CONFIG_STORAGE_TOPIC: compose-connect-configs
-      CONNECT_OFFSET_STORAGE_TOPIC: compose-connect-offsets
-      CONNECT_STATUS_STORAGE_TOPIC: compose-connect-status
-      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
-      CONNECT_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
-      CONNECT_INTERNAL_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
-      CONNECT_INTERNAL_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
-      CONNECT_REST_ADVERTISED_HOST_NAME: 'connect'
-      CONNECT_LOG4J_ROOT_LOGLEVEL: 'INFO'
-
-  kafdrop:
-    image: obsidiandynamics/kafdrop
-    depends_on:
-      - broker1
-      - broker2
-      - broker3
-    ports:
-      - 9000:9000
-    environment:
-      KAFKA_BROKERCONNECT: 'broker1:9092,broker2:9093,broker3:9094'
-
-
-  rest-proxy:
-      image: confluentinc/cp-kafka-rest:7.4.3
-      depends_on:
-        - broker1
-        - broker2
-        - broker3
-      ports:
-        - 8082:8082
-      environment:
-        KAFKA_REST_HOST_NAME: rest-proxy
-        KAFKA_REST_BOOTSTRAP_SERVERS: 'broker1:9092,broker2:9093,broker3:9094'
-        KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
-        KAFKA_REST_SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
-
-  prometheus:
-    image: prom/prometheus:latest
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus_data:/prometheus
-    command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-    ports:
-      - 9090:9090
-
-  grafana:
-    image: grafana/grafana:latest
-    depends_on:
-      - prometheus
-      - broker1
-    volumes:
-      - grafana_data:/var/lib/grafana
-    ports:
-      - 3000:3000
+      - /opt/kafka_broker.yml:/opt/kafka_broker.yml
+      - ./kafka_server_jaas.conf:/etc/kafka/kafka_server_jaas.conf
 
 volumes:
+
   prometheus_data:
   grafana_data:
-
-      

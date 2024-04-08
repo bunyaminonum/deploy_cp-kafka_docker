@@ -21,7 +21,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_JMX_PORT: 9101
       KAFKA_JMX_HOSTNAME: localhost
-      KAFKA_OPTS: ""
+      KAFKA_OPTS: "-javaagent:/opt/jmx_prometheus_javaagent-0.15.0.jar=7071:/opt/kafka_broker.yml"
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.0.jar:/opt/jmx_prometheus_javaagent-0.15.0.jar
       - /opt/kafka_broker.yml:/opt/kafka_broker.yml

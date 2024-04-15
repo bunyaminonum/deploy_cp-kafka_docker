@@ -215,3 +215,4 @@ volumes:
   control-center_data:
   data:
   schema-registry_data:
+  ksql-server_data:

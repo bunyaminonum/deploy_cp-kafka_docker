@@ -26,7 +26,7 @@ services:
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.1.jar:/opt/jmx_prometheus_javaagent-0.15.1.jar
       - /opt/kafka_broker1.yml:/opt/kafka_broker1.yml
-      - broker1_data:/var/lib/kafka/data/broker1
+      - broker1_data:/var/lib/kafka/data
 
   broker2:
     image: confluentinc/cp-kafka:7.4.3
@@ -46,7 +46,7 @@ services:
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.2.jar:/opt/jmx_prometheus_javaagent-0.15.2.jar
       - /opt/kafka_broker2.yml:/opt/kafka_broker2.yml
-      - broker2_data:/var/lib/kafka/data/broker2
+      - broker2_data:/var/lib/kafka/data
 
   broker3:
     image: confluentinc/cp-kafka:7.4.3
@@ -66,7 +66,7 @@ services:
     volumes:
       - /opt/jmx_prometheus_javaagent-0.15.3.jar:/opt/jmx_prometheus_javaagent-0.15.3.jar
       - /opt/kafka_broker3.yml:/opt/kafka_broker3.yml
-      - broker3_data:/var/lib/kafka/data/broker3
+      - broker3_data:/var/lib/kafka/data
 
   schema-registry:
     image: confluentinc/cp-schema-registry:7.4.3

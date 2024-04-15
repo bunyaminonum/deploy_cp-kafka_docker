@@ -216,3 +216,4 @@ volumes:
   data:
   schema-registry_data:
   ksql-server_data:
+  ksqldb-cli_data:

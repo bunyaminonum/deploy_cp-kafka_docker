@@ -214,3 +214,4 @@ volumes:
   connect_data:
   control-center_data:
   data:
+  schema-registry_data:

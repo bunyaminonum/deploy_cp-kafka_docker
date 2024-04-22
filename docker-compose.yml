@@ -103,6 +103,7 @@ services:
       KSQL_KSQL_LOGGING_PROCESSING_TOPIC_REPLICATION_FACTOR: 3
       KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: 'true'
       KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: 'true'
+      KSQL_PROCESSING_GUARANTEE: 'exactly_once'  # Add this line
     volumes:
       - ksql-server_data:/var/lib/kafka/ksql
 

@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  zookeeper2:
+    image: confluentinc/cp-zookeeper:7.4.3
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2182
+      ZOOKEEPER_TICK_TIME: 2000
+
+  broker4:
+    image: confluentinc/cp-kafka:7.4.3
+    depends_on:
+      - zookeeper2
+    ports:
+      - 9095:9095
+    environment:
+      KAFKA_BROKER_ID: 4
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper2:2182
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://130.61.208.192:9095
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9095
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1

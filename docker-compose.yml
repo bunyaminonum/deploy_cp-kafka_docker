@@ -27,6 +27,7 @@ services:
       - /opt/jmx_prometheus_javaagent-0.15.1.jar:/opt/jmx_prometheus_javaagent-0.15.1.jar
       - /opt/kafka_broker1.yml:/opt/kafka_broker1.yml
       - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/mm2.properties:/etc/kafka/mm2.properties
+      - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/consumer.properties:/etc/kafka/consumer.properties
 #      - broker1_data:/var/lib/kafka/data
 
   broker2:
@@ -48,6 +49,7 @@ services:
       - /opt/jmx_prometheus_javaagent-0.15.2.jar:/opt/jmx_prometheus_javaagent-0.15.2.jar
       - /opt/kafka_broker2.yml:/opt/kafka_broker2.yml
       - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/mm2.properties:/etc/kafka/mm2.properties
+      - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/consumer.properties:/etc/kafka/consumer.properties
 #      - broker2_data:/var/lib/kafka/data
 
   broker3:
@@ -69,6 +71,7 @@ services:
       - /opt/jmx_prometheus_javaagent-0.15.3.jar:/opt/jmx_prometheus_javaagent-0.15.3.jar
       - /opt/kafka_broker3.yml:/opt/kafka_broker3.yml
       - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/mm2.properties:/etc/kafka/mm2.properties
+      - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/consumer.properties:/etc/kafka/consumer.properties
  #     - broker3_data:/var/lib/kafka/data
 
   schema-registry:

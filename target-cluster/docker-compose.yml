@@ -21,3 +21,4 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/mm2.properties:/etc/kafka/mm2.properties
+      - /home/ubuntu/confluent-kafka/deploy_cp-kafka_docker/target-cluster/producer.properties:/etc/kafka/producer.properties

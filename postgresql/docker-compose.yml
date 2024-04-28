@@ -6,3 +6,5 @@ services:
     environment:
       POSTGRES_PASSWORD: somePassword
     command: postgres -c wal_level=logical
+    ports:
+      - "5432:5432"

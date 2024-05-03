@@ -143,7 +143,7 @@ services:
       CONNECT_LOG4J_ROOT_LOGLEVEL: 'INFO'
       CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
     command: |
-      bash -c 'confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.7.1 && /etc/confluent/docker/run'
+      bash -c 'confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.7.1 && confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.7.6 && /etc/confluent/docker/run'
     volumes:
       - connect_data:/var/lib/kafka/connect
     

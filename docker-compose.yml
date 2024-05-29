@@ -88,6 +88,9 @@ services:
       CONNECT_CONFIG_STORAGE_TOPIC: compose-connect-configs
       CONNECT_OFFSET_STORAGE_TOPIC: compose-connect-offsets
       CONNECT_STATUS_STORAGE_TOPIC: compose-connect-status
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: "1"
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: "1"
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: "1"
       CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
       CONNECT_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
       CONNECT_INTERNAL_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"

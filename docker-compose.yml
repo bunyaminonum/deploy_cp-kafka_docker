@@ -103,13 +103,14 @@ services:
   kafdrop:
     image: obsidiandynamics/kafdrop
     depends_on:
-      - broker
+      - kafka
     ports:
-      - 9000:9000
+      - "9000:9000"
     environment:
-      KAFKA_BROKERCONNECT: 'broker:9092'
-    volumes:
-      - kafdrop_data:/var/lib/kafdrop/
+      KAFKA_BROKERCONNECT: kafka:9092
+      JVM_OPTS: "-Xms32M -Xmx64M"
+      SCHEMAREGISTRY_CONNECT: http://schema-registry:8081
+      SERVER_SERVLET_CONTEXTPATH: "/"
 
   rest-proxy:
     image: confluentinc/cp-kafka-rest:7.4.3

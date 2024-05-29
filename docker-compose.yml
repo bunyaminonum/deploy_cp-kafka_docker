@@ -98,7 +98,11 @@ services:
       CONNECT_REST_ADVERTISED_HOST_NAME: 'connect'
       CONNECT_LOG4J_ROOT_LOGLEVEL: 'INFO'
     volumes:
-      - connect_data:/var/lib/kafka/connect    
+      - connect_data:/var/lib/kafka/connect
+    command: >
+      bash -c 'confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.7.1 &&
+               confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.7.6 &&
+               /etc/confluent/docker/run'    
 
   kafdrop:
     image: obsidiandynamics/kafdrop

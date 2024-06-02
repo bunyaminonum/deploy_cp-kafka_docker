@@ -1,4 +1,0 @@
-PS C:\Users\onumb\OneDrive\Masaüstü\confluent\deploy_cp-kafka_docker> & C:/Users/onumb/AppData/Local/Microsoft/WindowsApps/python3.12.exe c:/Users/onumb/OneDrive/Masaüstü/confluent/deploy_cp-kafka_docker/consumer.py
-c:\Users\onumb\OneDrive\Masaüstü\confluent\deploy_cp-kafka_docker\consumer.py:14: DeprecationWarning: AvroConsumer has been deprecated. Use AvroDeserializer instead.
-  consumer = AvroConsumer(consumer_config)
-Message deserialization failed: Message deserialization failed for message at CUSTOMER_TRANSACTIONS_TOTAL2 [0] offset 0: message does not start with magic byte

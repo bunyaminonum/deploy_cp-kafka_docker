@@ -1,18 +1,4 @@
-
-ksql> CREATE TABLE customer_transactions_total AS
->  SELECT
->    t.customerid,
->    c.firstname,
->    c.lastname,
->    c.email,
->    SUM(t.amount) AS total_amount,
->    COUNT(*) AS transaction_count
->  FROM transactions_stream t
->  JOIN customers_table c ON t.customerid = c.customerid
->  WINDOW TUMBLING (SIZE 10 MINUTES)
->  GROUP BY t.customerid, c.firstname, c.lastname, c.email
->  EMIT CHANGES;
-Key format does not support schema.
-format: KAFKA
-schema: Persistence{columns=[`T_CUSTOMERID` INTEGER KEY, `FIRSTNAME` STRING KEY, `LASTNAME` STRING KEY, `EMAIL` STRING KEY], features=[]}
-reason: The 'KAFKA' format only supports a single field. Got: [`T_CUSTOMERID` INTEGER KEY, `FIRSTNAME` STRING KEY, `LASTNAME` STRING KEY, `EMAIL` STRING KEY]
+PS C:\Users\onumb\OneDrive\Masaüstü\confluent\deploy_cp-kafka_docker> & C:/Users/onumb/AppData/Local/Microsoft/WindowsApps/python3.12.exe c:/Users/onumb/OneDrive/Masaüstü/confluent/deploy_cp-kafka_docker/consumer.py
+c:\Users\onumb\OneDrive\Masaüstü\confluent\deploy_cp-kafka_docker\consumer.py:14: DeprecationWarning: AvroConsumer has been deprecated. Use AvroDeserializer instead.
+  consumer = AvroConsumer(consumer_config)
+Message deserialization failed: Message deserialization failed for message at CUSTOMER_TRANSACTIONS_TOTAL2 [0] offset 0: message does not start with magic byte

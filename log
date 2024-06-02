@@ -1,0 +1,18 @@
+
+ksql> CREATE TABLE customer_transactions_total AS
+>  SELECT
+>    t.customerid,
+>    c.firstname,
+>    c.lastname,
+>    c.email,
+>    SUM(t.amount) AS total_amount,
+>    COUNT(*) AS transaction_count
+>  FROM transactions_stream t
+>  JOIN customers_table c ON t.customerid = c.customerid
+>  WINDOW TUMBLING (SIZE 10 MINUTES)
+>  GROUP BY t.customerid, c.firstname, c.lastname, c.email
+>  EMIT CHANGES;
+Key format does not support schema.
+format: KAFKA
+schema: Persistence{columns=[`T_CUSTOMERID` INTEGER KEY, `FIRSTNAME` STRING KEY, `LASTNAME` STRING KEY, `EMAIL` STRING KEY], features=[]}
+reason: The 'KAFKA' format only supports a single field. Got: [`T_CUSTOMERID` INTEGER KEY, `FIRSTNAME` STRING KEY, `LASTNAME` STRING KEY, `EMAIL` STRING KEY]

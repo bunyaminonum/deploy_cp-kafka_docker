@@ -1,0 +1,44 @@
+# Ignore Docker-related override files
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.test.yml
+
+# Allow the main docker-compose.yml file
+!docker-compose.yml
+
+# Ignore log and temporary files
+*.log
+*.tmp
+
+# Ignore Kafka logs and data
+kafka-logs/
+zookeeper/
+
+# Ignore PostgreSQL data
+postgresql/data/
+
+# Ignore Prometheus data
+prometheus_data/
+
+# Ignore monitoring files
+monitoring-files/
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore Python virtual environments if using Python
+venv/
+__pycache__/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.swp

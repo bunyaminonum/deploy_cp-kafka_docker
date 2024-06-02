@@ -1,0 +1,40 @@
+-- customers tablosundan akış oluşturma
+CREATE STREAM customers_stream (
+    customerid INTEGER,
+    firstname VARCHAR,
+    lastname VARCHAR,
+    email VARCHAR
+) WITH (KAFKA_TOPIC='postgres-avro1-customers', VALUE_FORMAT='AVRO');
+
+-- transactions tablosundan akış oluşturma
+CREATE STREAM transactions_stream (
+    transactionid INTEGER,
+    customerid INTEGER,
+    date STRING,
+    amount DOUBLE
+) WITH (KAFKA_TOPIC='postgres-avro1-transactions', VALUE_FORMAT='AVRO');
+
+CREATE TABLE customer_transactions_total AS
+  SELECT customerid, SUM(amount) AS total_amount, COUNT(*) AS transaction_count
+  FROM transactions_stream
+  WINDOW TUMBLING (SIZE 1 HOUR)
+  GROUP BY customerid
+  EMIT CHANGES;
+
+
+CREATE TABLE customer_transactions_total2 WITH (KEY_FORMAT='JSON') AS
+  SELECT
+    t.customerid,
+    c.firstname,
+    c.lastname,
+    c.email,
+    SUM(t.amount) AS total_amount,
+    COUNT(*) AS transaction_count
+  FROM transactions_stream t
+  INNER JOIN customers_stream c WITHIN 1 HOURS ON t.customerid = c.customerid
+  WINDOW TUMBLING (SIZE 1 HOUR, GRACE PERIOD 2 HOURS)
+  GROUP BY t.customerid, c.firstname, c.lastname, c.email
+  HAVING SUM(t.amount) > 500
+  EMIT CHANGES;
+
+

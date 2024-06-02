@@ -1,0 +1,51 @@
+
+curl -X POST http://localhost:8083/connectors -H 'Content-Type: application/json' -d '{
+  "name": "jdbc-source-connector-transactions8",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "mode": "incrementing",
+    "timestamp.column.name": "date",
+    "incrementing.column.name": "transactionid",
+    "topic.prefix": "postgres-avro1-",
+    "connection.password": "mypassword",
+    "connection.user": "myuser",
+    "connection.url": "jdbc:postgresql://130.61.209.12:5433/mydatabase",
+    "table.whitelist": "transactions",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter.schemas.enable": "true",
+    "key.converter.schemas.enable": "false",
+    "transforms": "createKey,extractInt,cast",
+    "transforms.createKey.type": "org.apache.kafka.connect.transforms.ValueToKey",
+    "transforms.createKey.fields": "transactionid",
+    "transforms.extractInt.type": "org.apache.kafka.connect.transforms.ExtractField$Key",
+    "transforms.extractInt.field": "transactionid",
+    "transforms.cast.type": "org.apache.kafka.connect.transforms.Cast$Value",
+    "transforms.cast.spec": "date:string,amount:float64"
+  }
+}'
+
+curl -X POST http://localhost:8083/connectors -H 'Content-Type: application/json' -d '{
+  "name": "jdbc-source-connector-customers",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "mode": "incrementing",
+    "incrementing.column.name": "customerid",
+    "topic.prefix": "postgres-avro1-",
+    "connection.password": "mypassword",
+    "connection.user": "myuser",
+    "connection.url": "jdbc:postgresql://130.61.209.12:5433/mydatabase",
+    "table.whitelist": "customers",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter.schemas.enable": "true",
+    "key.converter.schemas.enable": "false",
+    "transforms": "createKey,extractInt",
+    "transforms.createKey.type": "org.apache.kafka.connect.transforms.ValueToKey",
+    "transforms.createKey.fields": "customerid",
+    "transforms.extractInt.type": "org.apache.kafka.connect.transforms.ExtractField$Key",
+    "transforms.extractInt.field": "customerid"
+  }
+}'

@@ -1,0 +1,28 @@
+table customers
+CREATE TABLE IF NOT EXISTS public.customers
+(
+    customerid integer NOT NULL,
+    firstname character varying(100) COLLATE pg_catalog."default",
+    lastname character varying(100) COLLATE pg_catalog."default",
+    email character varying(100) COLLATE pg_catalog."default",
+    CONSTRAINT customers_pkey PRIMARY KEY (customerid)
+)
+
+
+
+CREATE TABLE IF NOT EXISTS public.transactions
+(
+    transactionid integer NOT NULL,
+    customerid integer,
+    date timestamp without time zone,
+    amount numeric(10,2),
+    CONSTRAINT transacttaions_pkey PRIMARY KEY (transactionid),
+    CONSTRAINT transactions_customerid_fkey FOREIGN KEY (customerid)
+        REFERENCES public.customers (customerid) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+
+
